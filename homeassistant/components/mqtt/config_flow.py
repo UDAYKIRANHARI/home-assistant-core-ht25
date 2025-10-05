@@ -3024,7 +3024,7 @@ def data_schema_from_fields(
     if device_data is not None:
         component_data_with_user_input: dict[str, Any] | None = dict(device_data)
         if TYPE_CHECKING:
-            assert component_data_with_user_input is not None
+            assert component_data_with_user_input 
         component_data_with_user_input.update(
             component_data_with_user_input.pop("mqtt_settings", {})
         )
